@@ -18,7 +18,6 @@ import com.google.firebase.crashlytics.FirebaseCrashlytics
 import com.project.lumina.client.router.launch.AnimatedLauncherScreen
 import com.project.lumina.client.ui.theme.LuminaClientTheme
 import com.project.lumina.client.util.HashCat
-import com.project.lumina.client.util.SessionManager
 import com.project.lumina.client.util.TrackUtil
 import com.project.lumina.client.util.UpdateCheck
 import kotlinx.coroutines.delay
