@@ -79,7 +79,6 @@ import com.amplitude.android.Amplitude
 import com.amplitude.android.Configuration
 import com.amplitude.android.DefaultTrackingOptions
 import com.project.lumina.client.devtools.LogcatService
-import com.project.lumina.client.util.SessionManager
 import com.project.lumina.client.util.TrackUtil
 
 
@@ -184,8 +183,6 @@ class MainActivity : ComponentActivity() {
             )
         )
         amplitude.track("Lumina Mobile")
-        val sessionManager = SessionManager(applicationContext)
-        sessionManager.checkSession(this)
         InternalLoggerFactory.setDefaultFactory(JdkLoggerFactory.INSTANCE)
         Log.i("MainApplication", "Forced Netty to use JUL logger instead of Log4j2.")
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
